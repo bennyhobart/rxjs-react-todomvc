@@ -5,6 +5,7 @@ import AddTodo from './components/todos/AddTodo';
 
 export default (props) => (<div>
     <h1>Todo List</h1>
+    
     <TodoList />
     <AddTodo />
 </div>);
