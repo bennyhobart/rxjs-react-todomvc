@@ -1,11 +1,10 @@
 import Rx from 'rx';
 
-const dispatcher = Rx.ReplaySubject();
-
+const dispatcher = new Rx.ReplaySubject();
 export default {
     registerActions: (actions) => {
-        actions.onNext(dispatcher.onNext);
+        actions.forEach(dispatcher.onNext.bind(dispatcher));
     },
-    scan: dispatcher.scan
+    scan: dispatcher.scan.bind(dispatcher)
 }
 

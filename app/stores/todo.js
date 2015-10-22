@@ -14,4 +14,4 @@ export default dispatcher.scan((acc, payload) => {
             break;
     }
     return acc;
-}), []);
+}, []);

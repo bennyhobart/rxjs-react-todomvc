@@ -4,7 +4,6 @@ import dispatcher from '../dispatcher.js';
 let id = 0;
 const subject = new Rx.Subject();
 dispatcher.registerActions(subject);
-
 export default {
     addTodo: (name) => {
         subject.onNext({
