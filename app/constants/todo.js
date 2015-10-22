@@ -1,7 +1,7 @@
 import keymirror from 'keymirror';
 
 export default keymirror({
-    'ADD_TODO',
-    'REMOVE_TODO',
-    'UPDATE_TODO',
+    'ADD_TODO': undefined,
+    'REMOVE_TODO': undefined,
+    'UPDATE_TODO': undefined,
 });
