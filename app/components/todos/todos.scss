@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+.TodoButton {
+  padding: $padding-base-vertical $padding-base-horizontal;
+}
+
+.TodoList {
+  border: 1px dashed black;
+}
+
+.TodoItem {
+  padding: $padding-base-horizontal $padding-base-horizontal;
+}
