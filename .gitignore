@@ -1,2 +1,5 @@
 node_modules/
+.idea/
+.DS_STORE
 npm-debug.log
+*.orig
