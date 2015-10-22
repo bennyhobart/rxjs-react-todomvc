@@ -7,9 +7,9 @@ export default class TodoList extends Component {
         this.state ={
             todos: []
         };
+        this.onChange = (state) => this.setState({todos: state});
         todoStore.forEach(this.onChange);
     }
-    onChange= (state) => this.setState({todos: state})
     render() {
         return (<div>
             {this.state.todos.map(todo => <Todo key={todo.id} todo={todo}/>)}
