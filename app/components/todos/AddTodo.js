@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 export default class AddTodo extends Component {
-    render() {
-        return (<div>Add Todo</div>);
-    }
+  render() {
+    return (<button>Add Todo</button>);
+  }
 }
