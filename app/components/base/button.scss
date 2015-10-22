@@ -1,0 +1,11 @@
+@import '../variables.scss';
+
+.Button {
+  border: 0;
+  font-size: 1em;
+  padding: $padding-large-vertical $padding-large-horizontal;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

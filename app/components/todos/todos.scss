@@ -1,13 +1,42 @@
 @import '../variables.scss';
+@import '../base/button.scss';
+
 
 .TodoButton {
-  padding: $padding-base-vertical $padding-base-horizontal;
+  @extend  .Button;
+  background-color: $success;
+  color: $gray-lighter;
+
+  &:hover {
+    background-color: $success-darker;
+  }
 }
 
+
 .TodoList {
-  border: 1px dashed black;
+  border: 1px dashed $gray-darker;
 }
 
 .TodoItem {
+  &:not(:last-child) {
+    border-bottom: 1px dashed $gray-darker;
+  }
+  display: flex;
+  justify-content: space-between;
   padding: $padding-base-horizontal $padding-base-horizontal;
+
+  .TodoItem_Content {
+
+  }
+
+  .TodoItem_Delete {
+    @extend .Button;
+    background-color: $danger;
+    color: $gray-lighter;
+    font-size: 1.2em;
+
+    &:hover {
+      background-color: $danger-darker;
+    }
+  }
 }

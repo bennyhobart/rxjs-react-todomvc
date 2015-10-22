@@ -16,8 +16,8 @@ export default class TodoList extends Component {
   onChange = (state) => this.setState({todos: state});
 
   render() {
-    let todos = this.state.todos.map(todo => <Todo key={todo.id} todo={todo} class={styles.TodoItem} />);
-    if(!todos.length) todos = <div>No todo items</div>
+    let todos = this.state.todos.map(todo => <Todo key={todo.id} todo={todo}/>);
+    if (!todos.length) todos = <div>No todo items</div>
 
     return (
       <div className={styles.TodoList}>
