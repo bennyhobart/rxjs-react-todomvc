@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import Todo from './Todo';
-import todoStore from '../../stores/todo';
-
-import styles from './todos.scss';
+import todoStore from '../stores/todo';
+import styles from './TodoList.css';
 
 export default class TodoList extends Component {
   constructor() {
