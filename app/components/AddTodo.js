@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import todoActions from '../../actions/todo';
+import todoActions from '../actions/todo';
 
-import styles from './todos.scss';
+import styles from './TodoList.css';
 
 export default class AddTodo extends Component {
 
